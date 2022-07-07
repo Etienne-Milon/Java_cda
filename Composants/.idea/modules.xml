@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Composants.iml" filepath="$PROJECT_DIR$/Composants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControlledTextField/ControlledTextField.iml" filepath="$PROJECT_DIR$/ControlledTextField/ControlledTextField.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecuSocialTextField/SecuSocialTextField.iml" filepath="$PROJECT_DIR$/SecuSocialTextField/SecuSocialTextField.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SelectionTable/SelectionTable.iml" filepath="$PROJECT_DIR$/SelectionTable/SelectionTable.iml" />
+    </modules>
+  </component>
+</project>

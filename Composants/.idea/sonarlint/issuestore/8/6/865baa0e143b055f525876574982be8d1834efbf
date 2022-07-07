@@ -1,0 +1,26 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(ØÐÆÏ
+J
+java:S3740"/Provide the parametrized type for this generic.(Þ©€ëùÿÿÿÿ
+J
+java:S3740!"/Provide the parametrized type for this generic.(õ‡’—ûÿÿÿÿ
+E
+java:S3740*"/Provide the parametrized type for this generic.(ê³ª¦
+E
+java:S37407"/Provide the parametrized type for this generic.(ÖÝ¿ 
+E
+java:S37407"/Provide the parametrized type for this generic.(ÖÝ¿ 
+€
+java:S13197"jThe type of "disponible" should be an interface such as "List" rather than the implementation "ArrayList".(ÖÝ¿ 
+~
+java:S13197"hThe type of "selected" should be an interface such as "List" rather than the implementation "ArrayList".(ÖÝ¿ 
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(”•µŒøÿÿÿÿ
+k
+java:S1104!"PMake bean a static final constant or non-public and provide accessors if needed.(õ‡’—ûÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(±…ºšúÿÿÿÿ
+W	java:S125˜"<This block of commented-out lines of code should be removed.(ÍûÃÍþÿÿÿÿ
+L
+java:S1128"6Remove this unused import 'javafx.event.EventHandler'.(º»û˜
+U
+java:S1128":Remove this unused import 'javafx.scene.input.MouseEvent'.(˜¬‹æÿÿÿÿÿ

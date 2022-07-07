@@ -1,0 +1,54 @@
+package fr.em.application;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import metier.CalcIMC;
+
+
+public class SampleController {
+	
+
+	@FXML
+	Button button;
+
+	@FXML
+	Label imc;
+	
+	@FXML
+	TextField masseInput;
+	
+	@FXML
+	TextField tailleInput;
+	
+	@FXML
+	TextField comment;
+	
+	@FXML
+	ImageView imageView; 
+	
+	@FXML
+	public TextField getComment() {
+		return comment;
+	}
+
+	
+	@FXML
+	public void initialize() {
+		imc.setText("");
+	}
+	
+	@FXML
+	public void calcIMC () {
+	CalcIMC calcimc = new CalcIMC (masseInput,tailleInput);	
+	imc.setText(calcimc.CalculerIMC());
+	//comment.setText(calcimc.getRange());
+	Image image2 = new Image(getClass().getResourceAsStream("C:/Java/workspace/AppliIMC/src/fr/em/images/"+calcimc.getRange()+".png")); 
+	imageView.setImage(image2);
+	}
+
+
+}

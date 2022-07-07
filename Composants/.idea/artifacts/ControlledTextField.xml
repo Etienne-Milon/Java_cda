@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ControlledTextField">
+    <output-path>$PROJECT_DIR$/out/artifacts/ControlledTextField</output-path>
+    <root id="archive" name="ControlledTextField.jar">
+      <element id="module-output" name="ControlledTextField" />
+    </root>
+  </artifact>
+</component>

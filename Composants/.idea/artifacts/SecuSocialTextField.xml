@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SecuSocialTextField">
+    <output-path>$PROJECT_DIR$/out/artifacts/SecuSocialTextField</output-path>
+    <root id="archive" name="SecuSocialTextField.jar">
+      <element id="module-output" name="SecuSocialTextField" />
+    </root>
+  </artifact>
+</component>

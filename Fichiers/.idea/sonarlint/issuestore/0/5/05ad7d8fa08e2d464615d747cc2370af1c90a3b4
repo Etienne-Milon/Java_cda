@@ -1,0 +1,7 @@
+
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ð§‘Á
+
+java:S1319"kThe type of "contactList" should be an interface such as "List" rather than the implementation "ArrayList".(ÞƒØÓ
+T
+java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ÞÛ

@@ -1,0 +1,19 @@
+
+h
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8ÍŒ»“”0HÌ"RMINORZ
+CODE_SMELL
+g
+java:S3740."/Provide the parametrized type for this generic.(¿—†üùÿÿÿÿ8ÍŒ»“”0HÎ"RMAJORZ
+CODE_SMELL
+b
+java:S3740/"/Provide the parametrized type for this generic.(ÐˆÈµ8ÍŒ»“”0HÏ"RMAJORZ
+CODE_SMELL
+g
+java:S3740."/Provide the parametrized type for this generic.(¿—†üùÿÿÿÿ8ÍŒ»“”0HÐ"RMAJORZ
+CODE_SMELL
+b
+java:S3740/"/Provide the parametrized type for this generic.(ÐˆÈµ8ÍŒ»“”0HÑ"RMAJORZ
+CODE_SMELL
+a
+java:S19056")Remove this unnecessary cast to "Enfant".(ÿÍîŽùÿÿÿÿ8ÍŒ»“”0HÒ"RMINORZ
+CODE_SMELL

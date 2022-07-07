@@ -1,0 +1,9 @@
+package metier;
+
+public class Calculs {
+
+	public Calculs() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

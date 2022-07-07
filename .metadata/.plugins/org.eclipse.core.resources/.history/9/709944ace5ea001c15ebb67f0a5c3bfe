@@ -1,0 +1,6 @@
+module testFx {
+	requires javafx.controls;
+	requires javafx.fxml;
+	
+	opens fr.em.application to javafx.graphics, javafx.fxml;
+}

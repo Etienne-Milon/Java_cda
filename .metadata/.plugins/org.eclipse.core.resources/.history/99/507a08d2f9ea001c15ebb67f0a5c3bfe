@@ -1,0 +1,11 @@
+package metier;
+
+public class CalcIMC {
+	
+
+	public static double CalculerIMC (double masse, double taille) {
+			
+		return (masse/(taille*taille));
+	} 
+	
+}

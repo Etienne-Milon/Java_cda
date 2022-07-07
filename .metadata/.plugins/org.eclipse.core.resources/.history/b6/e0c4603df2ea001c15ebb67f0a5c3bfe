@@ -1,0 +1,16 @@
+package fr.em.application;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
+public class SampleController {
+	
+
+	@FXML
+	Button button;
+
+	@FXML
+	Label masse;
+	
+	
+}

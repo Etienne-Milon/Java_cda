@@ -1,0 +1,15 @@
+
+	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÁí¥ûÿÿÿÿHâRMINORZ
+CODE_SMELL
+	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÁí¥ûÿÿÿÿHşRMINORZ
+CODE_SMELL
+…	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÁí¥ûÿÿÿÿ8´Í«0HêRMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(âÉ£®üÿÿÿÿ8ùäÕ©0HŒRMAJORZ
+CODE_SMELL
+	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÁí¥ûÿÿÿÿHãRMINORZ
+CODE_SMELL
+†	java:S116"ORename this field "Quad" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÏğĞıÿÿÿÿ8ùäÕ©0H‹RMINORZ
+CODE_SMELL
+ƒ	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º®‘Ş8´Í«0HèRMINORZ
+CODE_SMELL

@@ -1,0 +1,17 @@
+package metier;
+
+public class CalcIMC {
+	
+	float imc;
+
+	public CalcIMC(float imc) {
+		super();
+		this.imc = imc;
+	}
+
+	public static float CalculerIMC (float masse, float taille) {
+			
+		return (masse*taille*taille);
+	} 
+	
+}

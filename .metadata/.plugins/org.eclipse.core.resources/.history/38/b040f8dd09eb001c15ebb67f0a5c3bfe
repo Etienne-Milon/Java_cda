@@ -1,0 +1,20 @@
+package metier;
+
+import java.text.DecimalFormat;
+
+import javafx.scene.control.TextField;
+
+public class CalcIMC {
+	
+	//public CalcIMC() {
+	//}
+
+
+	public static String CalculerIMC (TextField masseInput, TextField tailleInput) {
+		double masseIN = Double.parseDouble(masseInput.getText());
+		double tailleIN = Double.parseDouble(tailleInput.getText());
+		DecimalFormat df = new DecimalFormat("###.##");
+		return String.valueOf(df.format(masseIN/(tailleIN*tailleIN)));
+	} 
+	
+}

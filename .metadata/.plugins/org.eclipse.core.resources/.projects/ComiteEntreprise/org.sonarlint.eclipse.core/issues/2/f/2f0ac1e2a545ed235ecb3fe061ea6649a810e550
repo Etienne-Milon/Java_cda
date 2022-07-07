@@ -1,0 +1,13 @@
+
+s	java:S125 "<This block of commented-out lines of code should be removed.(¾æáÏÿÿÿÿÿ8ŠíÏë“0H¡"RMAJORZ
+CODE_SMELL
+n	java:S125$"<This block of commented-out lines of code should be removed.(ŠƒÜ½8ŠíÏë“0H¤"RMAJORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(Îçª˜ıÿÿÿÿ8ŠíÏë“0H¤"RMAJORZ
+CODE_SMELL
+`
+java:S1481"-Remove this unused "pipette2" local variable.(¾Ñå8ŠíÏë“0H¢"RMINORZ
+CODE_SMELL
+o
+java:S1854"<Remove this useless assignment to local variable "pipette2".(¾Ñå8ŠíÏë“0H¡"RMAJORZ
+CODE_SMELL

@@ -1,0 +1,26 @@
+package metier;
+
+import javafx.scene.control.TextField;
+
+public class CalcIMC {
+	
+	double taille;
+	double masse;
+		
+
+	public CalcIMC(double taille, double masse) {
+		super();
+		this.taille = taille;
+		this.masse = masse;		
+
+	}
+
+
+
+	public static String CalculerIMC (TextField masseInput, TextField tailleInput) {
+		double masseIN = Double.parseDouble(masseInput.getText());
+		double tailleIN = Double.parseDouble(tailleInput.getText());
+		return String.valueOf(masseIN/(tailleIN*tailleIN));
+	} 
+	
+}

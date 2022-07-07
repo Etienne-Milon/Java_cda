@@ -1,0 +1,9 @@
+package metier;
+
+public class Operande {
+
+	public Operande() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

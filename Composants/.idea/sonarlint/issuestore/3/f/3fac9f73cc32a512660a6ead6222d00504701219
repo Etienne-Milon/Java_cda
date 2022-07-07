@@ -1,0 +1,7 @@
+
+V	java:S110"<This class has 6 parents which is greater than 5 authorized.(“¡œìşÿÿÿÿ
+h	java:S116"NRename this field "NIR" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É´üÿÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(É´üÿÿÿÿÿ
+o
+java:S5843"TSimplify this regular expression to reduce its complexity from 41 to the 20 allowed.(É´üÿÿÿÿÿ

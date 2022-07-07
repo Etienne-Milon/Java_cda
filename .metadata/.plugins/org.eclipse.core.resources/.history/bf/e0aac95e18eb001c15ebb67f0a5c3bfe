@@ -1,0 +1,31 @@
+package metier;
+
+import java.text.DecimalFormat;
+
+import javafx.scene.control.TextField;
+
+public class CalcIMC {
+	
+	Double poids;
+	Double taille;
+	
+	public CalcIMC(TextField poids, TextField taille) {
+		super();
+		
+		this.poids = Double.parseDouble(poids.getText());
+		this.taille = Double.parseDouble(taille.getText());
+		boolean normal = false;
+	}
+
+
+	public String CalculerIMC () {	
+		DecimalFormat df = new DecimalFormat("###.##");
+		Double imc = poids/(taille*taille);
+		return String.valueOf(df.format(imc));
+	} 
+	
+	public void getRange() {
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+Œ
+java:S1210"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(èˆï8ÅŞïò‘0HÄ"RMINORZ
+CODE_SMELL
+_
+java:S1125"'Remove the unnecessary boolean literal.(³«äıÿÿÿÿ8êÄ…š”0HÅ"RMINORZ
+CODE_SMELL
+T
+java:S1116"Remove this empty statement.(³«äıÿÿÿÿ8êÄ…š”0HÇ"RMINORZ
+CODE_SMELL
+T
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8êÄ…š”0HÉ"RMINORZ
+CODE_SMELL

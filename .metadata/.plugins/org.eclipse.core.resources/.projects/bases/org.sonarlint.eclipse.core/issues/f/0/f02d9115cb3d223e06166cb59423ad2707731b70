@@ -1,0 +1,9 @@
+
+ƒ	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œîó‘8œÍóµ0HôRMINORZ
+CODE_SMELL
+i
+java:S5261"1Add explicit curly braces to avoid dangling else.(„¶áìøÿÿÿÿ8—›Ú²0HõRMAJORZ
+CODE_SMELL
+Y
+java:S1125"'Remove the unnecessary boolean literal.(¹¹¾}8¹ñº²0HöRMINORZ
+CODE_SMELL

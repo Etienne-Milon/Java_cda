@@ -1,0 +1,114 @@
+package metier;
+
+import java.math.BigDecimal;
+
+public class Calculatrice {
+
+	String operande1;
+	String operande2;
+	String operateur;
+
+
+	public void setOperande1(String operande1calc) {
+		operande1 = operande1calc;
+	}
+
+	public void setOperande2(String operande2calc) {
+		operande2 = operande2calc;
+	}
+
+	public void setOperateur(String operateurCalc) {
+		operateur = operateurCalc;
+	}
+
+	public Calculatrice() {
+	}
+
+	public String Exec(String string) {
+		boolean arret = false;
+		String stackInput = "";
+		String result = "";
+		while (!arret) {
+		operande1 = getNombre(string,stackInput);
+		if ("+-*/".contains(string)) {
+			operateur = string;
+			String stackInput2 = "";
+			operande2 = getNombre(string,stackInput2);
+			if (string == "=")
+			{Calculer(operande1, operande2, operateur);
+			arret = true;
+			}
+			if ("+-*/".contains(string))
+				{Calculer(operande1, operande2, operateur);
+				operande1= Calculer(operande1, operande2, operateur).toString();
+				stackInput2 = "";
+				operande2 = getNombre(string,stackInput2);
+				}}
+				
+			return result;
+		}
+		return result;}
+		
+		
+
+
+	public String getNombre(String string, String stackInput) {
+		boolean operator = false;
+		while (!operator) {
+			try {
+				String temp = stackInput + string;
+				BigDecimal bigDec = new BigDecimal(temp);
+				stackInput = stackInput + string;
+				break;
+			} catch (Exception e) {
+				if ("+-*/".contains(string)) {
+					// setOperateur(string);
+					operator = true;
+				}
+			}
+		}
+		return stackInput;
+	}
+
+	public BigDecimal Calculer (String operande1, String operande2, String operateur ) {
+		
+		BigDecimal a = new BigDecimal(operande1);
+		BigDecimal b = new BigDecimal(operande2);
+		BigDecimal resultat = a;
+		switch (operateur) {
+		case "+" : resultat = Additionner(a,b);
+		case "-" : resultat = Soustraire(a,b);
+		case "*" : resultat = Multiplier(a,b);
+		case "/" : resultat = Diviser(a,b);
+		default : resultat = a;
+		}	
+		return resultat;
+		
+	}
+	
+	public BigDecimal Additionner(BigDecimal a, BigDecimal b) {
+		return a.add(b);
+	}
+
+	public BigDecimal Soustraire(BigDecimal a, BigDecimal b) {
+		return a.subtract(b);
+	}
+
+	public BigDecimal Multiplier(BigDecimal a, BigDecimal b) {
+		return a.multiply(b);
+	}
+
+	public BigDecimal Diviser(BigDecimal a, BigDecimal b) {
+		BigDecimal c = a;
+		try {
+			c = a.divide(b);
+		} catch (Exception e) {
+		}
+		return c;
+
+	}
+
+//	private void incrementNombre(String string) {
+//			}
+
+}

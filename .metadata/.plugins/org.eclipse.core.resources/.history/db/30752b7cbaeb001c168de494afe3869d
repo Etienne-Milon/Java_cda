@@ -1,0 +1,29 @@
+package metier;
+
+import javafx.event.Event;
+
+public class Calculs {
+
+	String operande1;
+	String operande2;
+	String operateur;
+	String stackInput = "";
+	
+	public Calculs(String operande1, String operande2, String operateur) {
+		super();
+		this.operande1 = operande1;
+		this.operande2 = operande2;
+		this.operateur = operateur;
+	}
+	
+	public setTouche()
+	
+	
+	public String getAfficheur(String string) {
+		try {
+		stackInput = stackInput + string;
+		}
+		catch (Exception e )
+	}
+
+}

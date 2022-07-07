@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="fr.em.application.SampleController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="button" layoutX="37.0" layoutY="238.0" mnemonicParsing="false" text="calculer IMC" />
+            <Label fx:id="masse" layoutX="41.0" layoutY="144.0" prefHeight="20.0" prefWidth="36.0" text="Masse" />
+            <TextField fx:id="masseInput" layoutX="85.0" layoutY="142.0" prefHeight="25.0" prefWidth="245.0" promptText="entrez votre poids en kg " />
+            <TextField fx:id="tailleInput" layoutX="85.0" layoutY="187.0" prefHeight="25.0" prefWidth="244.0" promptText="entrez votre taille en cm (ex 182)" />
+            <Label layoutX="41.0" layoutY="191.0" text="Taille" />
+            <Label fx:id="imc" layoutX="85.0" layoutY="333.0" prefHeight="17.0" prefWidth="154.0" text="I.M.C = " />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

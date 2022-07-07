@@ -1,0 +1,15 @@
+package metier;
+
+public class Operande {
+
+
+	public Operande(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void clearError() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

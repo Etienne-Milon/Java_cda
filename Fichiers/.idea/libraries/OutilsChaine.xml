@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="OutilsChaine">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jarfiles/OutilsChaine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../jarfiles/OutilsChaine.jar!/" />
+    </SOURCES>
+  </library>
+</component>

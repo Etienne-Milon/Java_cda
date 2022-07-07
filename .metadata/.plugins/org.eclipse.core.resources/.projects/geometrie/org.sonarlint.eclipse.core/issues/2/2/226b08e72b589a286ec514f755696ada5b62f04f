@@ -1,0 +1,35 @@
+
+„	java:S116"MRename this field "P4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¹œµıÿÿÿÿ8×¨§0HçRMINORZ
+CODE_SMELL
+	java:S116"MRename this field "P2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º©ï¤8×¨§0HåRMINORZ
+CODE_SMELL
+ƒ	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Âû‡8×¨§0HâRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªŠ–8×¨§0HßRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªŠ–8×¨§0HàRMINORZ
+CODE_SMELL
+ƒ	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Âû‡8×¨§0HáRMINORZ
+CODE_SMELL
+€	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Âû‡8×¨§0HèRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªŠ–8×¨§0HİRMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªŠ–8×¨§0HŞRMINORZ
+CODE_SMELL
+x	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‘ë HÛRMINORZ
+CODE_SMELL
+„	java:S116"MRename this field "P1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ì×…ÿÿÿÿÿ8×¨§0HäRMINORZ
+CODE_SMELL
+„	java:S116"MRename this field "P3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıû®Ìùÿÿÿÿ8×¨§0HæRMINORZ
+CODE_SMELL
+ƒ	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Âû‡8×¨§0HãRMINORZ
+CODE_SMELL
+ƒ	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‡¨²8êòĞ§0HëRMINORZ
+CODE_SMELL
+h
+java:S1854!"5Remove this useless assignment to local variable "H".(Ø‡¨²8êòĞ§0HìRMAJORZ
+CODE_SMELL
+Y
+java:S1481!"&Remove this unused "H" local variable.(Ø‡¨²8êòĞ§0HíRMINORZ
+CODE_SMELL
