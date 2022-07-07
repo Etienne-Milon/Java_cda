@@ -14,7 +14,7 @@
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#fichierOuvrir" text="Charger" />
                   <MenuItem fx:id="nouveau" mnemonicParsing="false" onAction="#fichierNouveau" text="Nouveau" />
-                  <Menu mnemonicParsing="false" text="Recent...">
+                  <Menu fx:id="recent" mnemonicParsing="false" text="Recent...">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Action 1" />
                     </items>

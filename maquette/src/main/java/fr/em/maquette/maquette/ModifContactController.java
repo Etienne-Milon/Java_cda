@@ -2,7 +2,6 @@ package fr.em.maquette.maquette;
 
 import fr.em.controlledtextfield.ControlledTextField;
 import fr.fs.metier.Personne;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 

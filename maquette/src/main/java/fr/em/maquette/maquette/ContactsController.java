@@ -1,8 +1,6 @@
 package fr.em.maquette.maquette;
 
 import fr.fs.metier.Personne;
-import fr.fs.metier.Repertoire;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -38,8 +36,6 @@ public class ContactsController {
         contactsTable.getSelectionModel().selectedItemProperty().addListener((observable,oldValue,newValue) -> afficherDetailContact(newValue));
         textFieldrecherche.textProperty().addListener((observable,oldValue,newValue) ->  mainApp.getRepertoire().filtrerContact(newValue));
         detailVisible(false);
-
-
     }
 
     public void AjouterContact(){

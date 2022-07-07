@@ -110,8 +110,6 @@ public class Main extends Application {
             modifContactController.setMainapp(this);
             dialogueStage.setScene(scene);
             dialogueStage.showAndWait();
-
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
