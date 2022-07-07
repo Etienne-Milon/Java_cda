@@ -1,0 +1,10 @@
+
+7
+java:S1170"!Make this final field static too.(≈√·Õ
+<
+java:S1170"!Make this final field static too.(÷Ç∞ˆ¯ˇˇˇˇ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(ø”ª∂
+h	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Æñ ˚ˇˇˇˇ
+c	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÊÀÍ
+E
+java:S1128"/Remove this unused import 'javafx.event.Event'.(Ùî·Ò
