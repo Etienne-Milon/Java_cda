@@ -10,8 +10,8 @@ import javafx.beans.property.StringProperty;
 public class Article
 {
 
-	private Integer id;
-	private String libelle;
+	private IntegerProperty id;
+	private StringProperty libelle;
 	private Integer volume;
 	private Float titrage;
 	private Float prixAchat;
@@ -21,12 +21,14 @@ public class Article
 	
 	public Article()
 	{
+		id = new SimpleIntegerProperty();
+		libelle = new SimpleStringProperty();
 		couleur = new Couleur();
 		typeBiere = new TypeBiere();
 		marque = new Marque();
 	}
 
-	public Article(Integer id, String libelle)
+	public Article(IntegerProperty  id, StringProperty  libelle)
 	{
 		this.id = id;
 		this.libelle = libelle;
@@ -37,32 +39,33 @@ public class Article
 
 	public IntegerProperty idProperty()
 	{
-		return new SimpleIntegerProperty(id);
+		return id;
 	}
+	//public IntegerProperty volProperty(){return new SimpleIntegerProperty(volume);}
 
 	public Integer getId()
 	{
-		return id;
+		return id.get();
 	}
 
 	public void setId(int id)
 	{
-		this.id = id;
+		this.id.setValue(id);
 	}
 
 	public StringProperty libelleProperty()
 	{
-		return new SimpleStringProperty(libelle);
+		return libelle;
 	}
 
 	public String getLibelle()
 	{
-		return libelle;
+		return libelle.get();
 	}
 
 	public void setLibelle(String libelle)
 	{
-		this.libelle = libelle;
+		this.libelle.set(libelle);
 	}
 
 	public IntegerProperty volumeProperty()

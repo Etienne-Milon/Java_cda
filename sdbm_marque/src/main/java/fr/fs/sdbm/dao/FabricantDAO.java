@@ -18,7 +18,6 @@ public class FabricantDAO extends DAO<Fabricant, Fabricant> {
 		ArrayList<Fabricant> liste = new ArrayList<>();
 		try (Statement stmt = connexion.createStatement()) {
 
-
 			// Determine the column set column
 
 			String strCmd = "SELECT id_fabricant,nom_fabricant from fabricant order by nom_fabricant";

@@ -4,7 +4,15 @@ public class Fabricant
 {
     private int id;
     private String libelle;
-    public Integer getId()
+
+    public Fabricant(){}
+
+    public Fabricant(int id, String libelle) {
+        this.id = id;
+        this.libelle = libelle;
+    }
+
+    public int getId()
     {
         return id;
     }

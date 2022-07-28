@@ -14,7 +14,7 @@ public class SDBMConnect2 {
     public static Connection getInstance() {
         if (connexion == null) {
             try {
-                String dbURL = "jdbc:sqlserver://127.0.0.1:1401;databaseName=exoBiere;encrypt=false";
+                String dbURL = "jdbc:sqlserver://127.0.0.1:1402;databaseName=SDBM;encrypt=false";
                 String user = "sa";
                 String pass = "azerty@123456";
                 connexion = DriverManager.getConnection(dbURL, user, pass);

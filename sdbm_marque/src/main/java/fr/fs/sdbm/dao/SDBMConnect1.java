@@ -17,8 +17,8 @@ public class SDBMConnect1 {
             try {
                 SQLServerDataSource ds = new SQLServerDataSource();
                 ds.setServerName("127.0.0.1");
-                ds.setPortNumber(1401);
-                ds.setDatabaseName("exoBiere");
+                ds.setPortNumber(1402);
+                ds.setDatabaseName("SDBM");
                 ds.setIntegratedSecurity(false);
 				ds.setEncrypt(false);
                 ds.setUser("sa");

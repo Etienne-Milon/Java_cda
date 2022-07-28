@@ -7,7 +7,6 @@ import fr.fs.sdbm.metier.*;
 import java.util.ArrayList;
 
 
-
 public class ServiceMarque
 {
 	private ArrayList<Pays> paysFiltre;
@@ -34,13 +33,12 @@ public class ServiceMarque
 		return continentFiltre;
 	}
 
-
 	public ArrayList<Fabricant> getFabricantFiltre()
 	{
 		return fabricantFiltre;
 	}
 
-	public ArrayList<Marque> getFilteredArticles(MarqueSearch marqueSearch)
+	public ArrayList<Marque> getFilteredMarques(MarqueSearch marqueSearch)
 	{
 		return DaoFactory.getMarqueDAO().getLike(marqueSearch);
 	}

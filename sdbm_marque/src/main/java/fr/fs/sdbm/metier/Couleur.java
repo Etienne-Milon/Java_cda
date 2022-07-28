@@ -16,7 +16,7 @@ public class Couleur
 	this.libelle = libelle;
     }
 
-    public Integer getId()
+    public int getId()
     {
 	return id;
     }
@@ -26,10 +26,13 @@ public class Couleur
 		return libelle;
 	}
 
-	@Override
+    public void setId(int id) {this.id = id;}
+
+    public void setLibelle(String libelle) { this.libelle = libelle; }
+
+    @Override
     public String toString()
     {
-	return libelle;
+        return libelle;
     }
-
 }

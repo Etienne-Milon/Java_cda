@@ -12,13 +12,14 @@ public class Marque
     private StringProperty libelle;
     private Pays pays;
     private Fabricant fabricant;
+    private  Continent continent;
 
     public Marque(){
         id = new SimpleIntegerProperty();
         libelle = new SimpleStringProperty();
     }
 
-    public Integer getId()
+    public int getId()
     {
 	return id.get();
     }
@@ -71,4 +72,6 @@ public class Marque
     public StringProperty libelleProperty() {
         return libelle;
     }
+    public Continent getContinent() {return continent;}
+
 }

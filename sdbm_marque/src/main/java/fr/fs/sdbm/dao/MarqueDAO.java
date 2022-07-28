@@ -3,10 +3,7 @@ package fr.fs.sdbm.dao;
 import fr.fs.sdbm.metier.*;
 import fr.fs.sdbm.service.MarqueSearch;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Types;
+import java.sql.*;
 import java.util.ArrayList;
 
 
@@ -36,7 +33,7 @@ public class MarqueDAO extends DAO<Marque, MarqueSearch>
 
 			while (rs.next())
 			{
-				// création d'un nouvel article à partir d'une ligne du resultset
+				// création d'une nouvelle marque à partir d'une ligne du resultset
 				Marque newMarque = new Marque();
 				newMarque.setId(rs.getInt(1));
 				newMarque.setLibelle(rs.getString(2));
@@ -60,8 +57,22 @@ public class MarqueDAO extends DAO<Marque, MarqueSearch>
 	@Override
 	public ArrayList<Marque> getAll()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Marque> liste = new ArrayList<>();
+		try (Statement stmt = connexion.createStatement()){
+			String strCmd = "SELECT * FROM MARQUE order by nom_marque";
+			ResultSet rs = stmt.executeQuery(strCmd);
+			while (rs.next()){
+				Marque marque = new Marque();
+				marque.setId(rs.getInt(1));
+				marque.setLibelle(rs.getString(2));
+				liste.add(marque);
+			}
+			rs.close();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return liste;
 	}
 
 	@Override

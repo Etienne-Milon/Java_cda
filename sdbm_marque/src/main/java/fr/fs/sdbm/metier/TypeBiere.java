@@ -23,5 +23,12 @@ public class TypeBiere
     {
 	return libelle;
     }
-    
+
+    public void setId(int id) {this.id = id;}
+
+    public void setLibelle(String libelle) {this.libelle = libelle;
+    }
+    public String getLibelle() {
+        return libelle;
+    }
 }
