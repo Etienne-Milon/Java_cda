@@ -76,6 +76,7 @@ public class GestionArticleController {
     private MenuApp menuApp;
 
     private ServiceArticle serviceArticle;
+    private Article selectedArticle;
 
     public GestionArticleController() {
     }
@@ -138,6 +139,8 @@ public class GestionArticleController {
 
         //tableView
         articleTable.getSelectionModel().selectedItemProperty().addListener((observable,oldvalue,newvalue)-> afficherArticle(newvalue));
+
+        selectedArticle = articleTable.getSelectionModel().getSelectedItem();
     }
 
     private void afficherArticle(Article newvalue) {
@@ -150,6 +153,7 @@ public class GestionArticleController {
         fabricantLabel.setText(newvalue.getMarque().getFabricant().getLibelle());
         paysLabel.setText(newvalue.getMarque().getPays().getLibelle());
         continentLabel.setText(newvalue.getMarque().getPays().getContinent().getLibelle());
+        selectedArticle = newvalue;
     }
 
     public void setMenuApp(MenuApp menuApp) {
@@ -200,6 +204,10 @@ public class GestionArticleController {
         articleTable.setItems(FXCollections.observableArrayList(serviceArticle.getFilteredArticles(articleSearch)));
     }
 
+    @FXML
+    private void update(){
+        menuApp.showAjoutModifArticle(selectedArticle);
+    }
 
 
 }

@@ -103,7 +103,7 @@
          </children>
       </AnchorPane>
       <Button layoutX="623.0" layoutY="573.0" mnemonicParsing="false" text="Create" />
-      <Button layoutX="683.0" layoutY="573.0" mnemonicParsing="false" text="Update" />
+      <Button layoutX="683.0" layoutY="573.0" mnemonicParsing="false" onAction="#update" text="Update" />
       <Button layoutX="748.0" layoutY="573.0" mnemonicParsing="false" text="Delete" />
 	</children>
 </AnchorPane>

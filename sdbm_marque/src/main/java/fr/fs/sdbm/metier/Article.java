@@ -18,6 +18,7 @@ public class Article
 	private Marque marque;
 	private Couleur couleur;
 	private TypeBiere typeBiere;
+	private int stock;
 	
 	public Article()
 	{
@@ -138,4 +139,10 @@ public class Article
 		this.prixAchat = prixAchat;
 	}
 
+	public int getStock() { return stock;}
+
+	public void setAll(String libelle, String text1, String text2, String text3, String text4, String text5, String text6) {
+	}
 }
+
+
