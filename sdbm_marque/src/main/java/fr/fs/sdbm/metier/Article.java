@@ -7,6 +7,8 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+import java.math.BigDecimal;
+
 public class Article
 {
 
@@ -14,7 +16,7 @@ public class Article
 	private StringProperty libelle;
 	private Integer volume;
 	private Float titrage;
-	private Float prixAchat;
+	private BigDecimal prixAchat;
 	private Marque marque;
 	private Couleur couleur;
 	private TypeBiere typeBiere;
@@ -129,20 +131,38 @@ public class Article
 		this.typeBiere = typeBiere;
 	}
 
-	public Float getPrixAchat()
+	public BigDecimal getPrixAchat()
 	{
 		return prixAchat;
 	}
 
-	public void setPrixAchat(Float prixAchat)
+	public void setPrixAchat(BigDecimal prixAchat)
 	{
 		this.prixAchat = prixAchat;
 	}
 
 	public int getStock() { return stock;}
 
-	public void setAll(String libelle, String text1, String text2, String text3, String text4, String text5, String text6) {
+	public void setAll(String libelle, BigDecimal prixDAchat, int volume, float titrage,
+					   String marque, String couleur, String typeBiere, int stock) {
+		setLibelle(libelle);
+		//setTypeBiere(typeBiere);
 	}
+
+	/*
+	article.setAll(
+                biereTextField.getText(),
+                new BigDecimal(prixDAchatTextField.getText()),
+                Integer.parseInt(volumeSCB.getAccessibleText()),
+                Float.parseFloat(titrageTextField.getText()),
+                marqueSCB.getId(),  //TODO : verifier si bon id
+                couleurSCB.getId(),
+                typeBiereSCB.getId(),
+                Integer.parseInt(stockInitalTextField.getText()));
+        serviceArticle.InsertArticle(article);
+        Close();
+	*/
+
 }
 
 

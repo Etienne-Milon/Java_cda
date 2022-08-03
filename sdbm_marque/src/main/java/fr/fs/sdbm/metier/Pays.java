@@ -1,10 +1,14 @@
 package fr.fs.sdbm.metier;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pays
 {
     private String id;
     private String libelle;
     private Continent continent;
+    private ArrayList <Marque> marques;
 
     public Pays()
     {
@@ -23,6 +27,7 @@ public class Pays
 	this.id = id;
 	this.libelle = libelle;
 	this.continent = continent;
+    marques = new ArrayList<>();
     }
 
     public String getId()
@@ -60,5 +65,7 @@ public class Pays
     {
 	return libelle;
     }
+
+    public List<Marque> getMarque() { return marques;}
 
 }

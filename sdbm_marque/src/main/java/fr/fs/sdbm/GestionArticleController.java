@@ -97,14 +97,18 @@ public class GestionArticleController {
         continentSearch.getItems().add(0, new Continent(0, "Choisir un continent"));
         continentSearch.valueProperty().addListener(observable -> filterContinent());
 
-
         paysSearch.setItems(FXCollections.observableArrayList(serviceArticle.getPaysFiltre()));
         paysSearch.getItems().add(0, new Pays("", "Choisir un pays"));
+        //paysSearch.valueProperty().addListener(observable -> filtrerPays());
         paysSearch.valueProperty().addListener(observable -> filterArticle());
 
         fabricantSearch.setItems(FXCollections.observableArrayList(serviceArticle.getFabricantFiltre()));
         fabricantSearch.getItems().add(0, new Fabricant(0, "Choisir un fabricant"));
         fabricantSearch.valueProperty().addListener(observable -> filterArticle());
+
+        marqueSearch.setItems(FXCollections.observableArrayList(serviceArticle.getMarqueFiltre()));
+        marqueSearch.getItems().add(0,new Marque(0,"Choisir une marque"));
+        marqueSearch.valueProperty().addListener(observable -> filterArticle());
 
         couleurSearch.setItems(FXCollections.observableArrayList(serviceArticle.getCouleurFiltre()));
         couleurSearch.getItems().add(0, new Couleur(0, "Choisir une couleur"));
@@ -174,6 +178,19 @@ public class GestionArticleController {
         filterArticle();
     }
 
+    private void filtrerPays(){
+        if (paysSearch.getSelectionModel().getSelectedItem() != null
+                && (paysSearch.getSelectionModel().getSelectedItem()).getId() != ""){
+            marqueSearch.setItems(FXCollections.observableArrayList(
+                    (paysSearch.getSelectionModel().getSelectedItem()).getMarque()));
+        } else {
+            marqueSearch.setItems(FXCollections.observableArrayList(serviceArticle.getMarqueFiltre()));
+        }
+        marqueSearch.getItems().add(0,new Marque(0, "Choisir une marque",new Pays()));
+        marqueSearch.getSelectionModel().select(0);
+        filterArticle();
+    }
+
     @FXML
     private void filterArticle() {
         ArticleSearch articleSearch = new ArticleSearch();
@@ -206,8 +223,13 @@ public class GestionArticleController {
 
     @FXML
     private void update(){
+        if (selectedArticle !=null)
+            menuApp.showAjoutModifArticle(selectedArticle);
+    }
+    @FXML
+    private void create(){
+        selectedArticle = null;
         menuApp.showAjoutModifArticle(selectedArticle);
     }
-
 
 }

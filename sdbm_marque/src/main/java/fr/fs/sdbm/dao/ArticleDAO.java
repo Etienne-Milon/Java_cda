@@ -3,9 +3,8 @@ package fr.fs.sdbm.dao;
 import fr.fs.sdbm.metier.*;
 import fr.fs.sdbm.service.ArticleSearch;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
+import java.math.BigDecimal;
+import java.sql.*;
 import java.util.ArrayList;
 
 
@@ -31,8 +30,6 @@ public class ArticleDAO extends DAO<Article,ArticleSearch>
             cStmt.setInt(9,articleSearch.getCouleur().getId());
             cStmt.setInt(10,articleSearch.getType().getId());
 
-
-
             // pagination 11,12...
 
             cStmt.execute();
@@ -44,7 +41,7 @@ public class ArticleDAO extends DAO<Article,ArticleSearch>
                 Article newArticle = new Article();
                 newArticle.setId(rs.getInt(1));
                 newArticle.setLibelle(rs.getString(2));
-                newArticle.setPrixAchat(rs.getFloat(3));
+                newArticle.setPrixAchat(BigDecimal.valueOf(rs.getFloat(3)));
                 newArticle.setVolume(rs.getInt(4));
                 newArticle.setTitrage(rs.getFloat(5));
                 newArticle.setMarque(new Marque());
@@ -83,8 +80,28 @@ public class ArticleDAO extends DAO<Article,ArticleSearch>
         return null;
     }
     @Override
-    public boolean insert(Article objet) {
-        return false;
+    public boolean insert(Article article) {
+        String Statement = "INSERT INTO ARTICLE (NOM_ARTICLE,PRIX_ACHAT,VOLUME,TITRAGE,ID_MARQUE,ID_COULEUR,ID_TYPE,Stock) VALUES (?,?,?,?,?,?,?,?)";
+        try (PreparedStatement pStmt = this.connexion.prepareStatement(Statement))
+             {
+            pStmt.setString(1, article.getLibelle());
+            pStmt.setBigDecimal(2, article.getPrixAchat());
+            pStmt.setInt(3,article.getVolume());
+            pStmt.setFloat(4,article.getTitrage());
+            pStmt.setInt(5,article.getMarque().getId());
+            pStmt.setInt(6,article.getCouleur().getId());
+            pStmt.setInt(7,article.getTypeBiere().getId());
+            pStmt.setInt(8,article.getStock());
+            pStmt.execute();
+
+            return true;
+            }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override

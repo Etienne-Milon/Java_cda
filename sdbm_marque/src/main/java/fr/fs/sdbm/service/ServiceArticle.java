@@ -49,4 +49,10 @@ public class ServiceArticle extends ServiceMarque
     {
         return DaoFactory.getArticleDAO().getLike(articleSearch);
     }
+
+
+    public boolean InsertArticle (Article article){
+        return DaoFactory.getArticleDAO().insert(article);
+
+    }
 }

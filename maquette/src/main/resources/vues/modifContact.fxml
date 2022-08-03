@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fr.em.controlledtextfield.ControlledTextField?>
+<?import fr.em.secusocialtextfield.SecuSocialTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane prefHeight="426.0" prefWidth="735.0" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifContactController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="131.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="536.0" minWidth="10.0" prefWidth="536.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="196.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="145.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="103.0" minHeight="1.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <ControlledTextField fx:id="nomControlledTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="323.0" GridPane.columnIndex="1" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" GridPane.rowIndex="1" />
+      <ControlledTextField fx:id="prenomControlledTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="323.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Téléphone" GridPane.rowIndex="2" />
+      <ControlledTextField fx:id="telephoneControlledTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="323.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#ValiderModifContact" text="Valider" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="95.0" />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#Close" text="Annuler" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <SecuSocialTextField prefHeight="33.0" prefWidth="284.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="n° Secu" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

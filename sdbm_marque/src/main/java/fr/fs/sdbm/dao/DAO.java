@@ -1,6 +1,7 @@
 package fr.fs.sdbm.dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public abstract class DAO <T, S>

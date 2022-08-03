@@ -4,6 +4,6 @@ module fr.em.maquette.maquette {
     requires fr.em.controlledtextfield;
     requires fr.em.secusocialtextfield;
 
-    opens fr.em.maquette.maquette to javafx.fxml;
-    exports fr.em.maquette.maquette;
+    opens controller to javafx.fxml;
+    exports controller;
 }
